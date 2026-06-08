@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Filmes Favoritos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="areaLogin">
+            <h1>Login</h1>
+
+            <input type="text" id="usuario" placeholder="Usuário">
+            <input type="password" id="senha" placeholder="Senha">
+
+            <button id="btnLogin">Entrar</button>
+
+            <p id="mensagemLogin" class="erro"></p>
+        </div>
+
+        <div id="areaLista" style="display: none;">
+            <h1>Lista de Filmes Favoritos</h1>
+
+            <input type="text" id="novoFilme" placeholder="Digite o nome do filme">
+
+            <div>
+                <button id="btnAdicionarFinal">
+                    Adicionar no Final
+                </button>
+
+                <button id="btnAdicionarInicio">
+                    Adicionar no Início
+                </button>
+            </div>
+
+            <p id="mensagemLista" class="erro"></p>
+
+            <ul id="listaFilmes"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
